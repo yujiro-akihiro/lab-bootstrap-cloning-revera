@@ -1,0 +1,15 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.site-header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.site-title a {
+    text-decoration: none;
+    color: #333;
+}
+
