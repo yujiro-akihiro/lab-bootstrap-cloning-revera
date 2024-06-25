@@ -6,4 +6,11 @@ $(document).ready(function() {
         cssArrows: false,
         disableHI: true
     });
+
+    // 現在のページに対応するメニュー項目をアクティブに設定
+    $('ul.sfmenu a').each(function() {
+        if (this.href === window.location.href) {
+            $(this).addClass('active');
+        }
+    });
 });

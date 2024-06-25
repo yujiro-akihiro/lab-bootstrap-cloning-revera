@@ -1,15 +1,57 @@
-
+/* 全体のスタイル */
 body {
     font-family: Arial, sans-serif;
 }
 
+/* ヘッダーのスタイル */
 .site-header {
-    background-color: #f8f9fa;
-    padding: 20px 0;
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 1px solid #e7e7e7;
 }
 
 .site-title a {
     text-decoration: none;
-    color: #333;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
 }
 
+.mainmenu {
+    text-align: right;
+}
+
+.topmenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.topmenu ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.topmenu ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 16px;
+}
+
+.topmenu ul li a:hover,
+.topmenu ul li a:focus {
+    color: red;
+}
+
+.topmenu ul li a.active {
+    color: red;
+    font-weight: bold;
+}
+
+.topmenu ul li.menu-item-has-children > a {
+    padding-right: 10px;
+}
+
+.topmenu ul li.menu-item-has-children > a .sf-sub-indicator {
+    margin-left: 5px;
+}
