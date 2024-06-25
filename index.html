@@ -5,75 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revera Theme Clone</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css"> <!-- カスタムCSSファイル -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- カスタムCSSファイルがある場合 -->
 </head>
 <body>
-    <div id="page" class="hfeed site">
-        <header id="masthead" class="site-header container" role="banner">
-            <div class="row">
-                <div class="site-branding col-sm-4">
-                    <h1 class="site-title">
-                        <a href="#" title="revera" rel="home">revera</a>
-                    </h1>
-                </div>
-                <div class="col-sm-8 mainmenu">
-                    <div class="mobilenavi">
-                        <select id="mm0" class="mnav">
-                            <option value="undefined">Select a page</option>
-                            <option value="#">Home</option>
-                            <option value="#">About</option>
-                            <option value="#">Sample page</option>
-                            <option value="#">Portfolio</option>
-                            <option value="#">Blog</option>
-                            <optgroup label="Parent page »">
-                                <option value="#">Main</option>
-                                <option value="#">Full page</option>
-                                <option value="#">Child page 1</option>
-                                <option value="#">Child page 2</option>
-                            </optgroup>
-                            <option value="#">Contact</option>
-                        </select>
-                    </div>
-                    <div id="submenu" class="topmenu">
-                        <ul id="topmenu" class="sfmenu sf-js-enabled sf-shadow">
-                            <li class="menu-item"><a href="#">Home</a></li>
-                            <li class="menu-item"><a href="#">About</a></li>
-                            <li class="menu-item"><a href="#">Sample page</a></li>
-                            <li class="menu-item"><a href="#">Portfolio</a></li>
-                            <li class="menu-item"><a href="#">Blog</a></li>
-                            <li class="menu-item menu-item-has-children">
-                                <a href="#">Parent page</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item"><a href="#">Full page</a></li>
-                                    <li class="menu-item"><a href="#">Child page 1</a></li>
-                                    <li class="menu-item"><a href="#">Child page 2</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item"><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="row">
+            <div class="col-12">
+                <header>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#">Revera</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
             </div>
-        </header>
-
-        <!-- Add other sections of the page here -->
-
-        <footer id="colophon" class="site-footer" role="contentinfo">
-            <div class="container">
-                <div class="site-info wrap row">
-                    <div class="fcred col-12">
-                        Copyright © 2024
-                        <a href="#" title="revera">revera</a> - Just another demo Sites site.<br>
-                        | <a href="#">Revera Theme</a>
+        </div>
+        <!-- Main Content Section -->
+        <div class="row">
+            <div class="col-12">
+                <main>
+                    <div class="jumbotron">
+                        <h1 class="display-4">Welcome to Revera!</h1>
+                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                        <hr class="my-4">
+                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
                     </div>
-                </div>
+                </main>
             </div>
-        </footer>
+        </div>
+        <!-- Footer Section -->
+        <div class="row">
+            <div class="col-12">
+                <footer>
+                    <div class="text-center py-3">
+                        <p>&copy; 2024 Revera. All rights reserved.</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script> <!-- カスタムJavaScriptファイル -->
 </body>
 </html>
