@@ -35,7 +35,7 @@ body {
 .topmenu ul li a {
     text-decoration: none;
     color: gray;
-    font-size: 16px;
+    font-size: 14px; /* フォントサイズを小さくする */
 }
 
 .topmenu ul li a:hover,
@@ -54,4 +54,49 @@ body {
 
 .topmenu ul li.menu-item-has-children > a .sf-sub-indicator {
     margin-left: 5px;
+}
+
+/* コンテンツセクションのスタイル */
+.jumbotron {
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    background-color: #f8f9fa;
+    border-radius: .3rem;
+}
+
+.fwidgets {
+    margin-bottom: 2rem;
+}
+
+.homewidget {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.homewidget i {
+    font-size: 48px;
+    margin-bottom: 1rem;
+}
+
+.portbox, .postbox {
+    margin-bottom: 2rem;
+}
+
+.portbox .hthumb, .postbox .hthumb {
+    margin-bottom: 1rem;
+}
+
+.portbox h3, .postbox h3 {
+    font-size: 18px;
+    margin-bottom: .5rem;
+}
+
+.hometa {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.hometa a {
+    color: #007bff;
 }
