@@ -1,6 +1,7 @@
 /* 全体のスタイル */
 body {
     font-family: Arial, sans-serif;
+    overflow-x: hidden; /* 無駄な横スクロールを防止 */
 }
 
 /* ヘッダーのスタイル */
@@ -99,4 +100,23 @@ body {
 
 .hometa a {
     color: #007bff;
+}
+
+/* 画像が親要素の幅に収まるようにする */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* .container 内の要素に余計な横スクロールを防ぐ */
+.container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* ポートフォリオの画像を調整 */
+.portbox .hthumb img {
+    width: 100%;
+    height: auto;
 }
