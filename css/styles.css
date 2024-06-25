@@ -29,14 +29,15 @@ body {
 }
 
 .topmenu ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 15px;
 }
 
 .topmenu ul li a {
     text-decoration: none;
     color: gray;
-    font-size: 14px; /* フォントサイズを小さくする */
+    font-size: 16px; /* フォントサイズを調整 */
+    padding: 10px 15px;
 }
 
 .topmenu ul li a:hover,
