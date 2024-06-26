@@ -1,123 +1,105 @@
 /* 全体のスタイル */
 body {
     font-family: Arial, sans-serif;
-    overflow-x: hidden; /* 無駄な横スクロールを防止 */
+    color: #333;
 }
 
-/* ヘッダーのスタイル */
 .site-header {
-    background-color: white;
-    padding: 10px 0;
-    border-bottom: 1px solid #e7e7e7;
+    background-color: #fff;
+    padding: 20px 0;
 }
 
 .site-title a {
-    text-decoration: none;
-    color: black;
+    color: #000;
     font-size: 24px;
     font-weight: bold;
-}
-
-.mainmenu {
-    text-align: right;
-}
-
-.topmenu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.topmenu ul li {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-.topmenu ul li a {
     text-decoration: none;
-    color: gray;
-    font-size: 16px; /* フォントサイズを調整 */
+}
+
+.navbar-nav .nav-link {
+    color: #555;
+    font-size: 16px;
     padding: 10px 15px;
 }
 
-.topmenu ul li a:hover,
-.topmenu ul li a:focus {
-    color: red;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #d9534f;
+    background-color: transparent;
 }
 
-.topmenu ul li a.active {
-    color: red;
-    font-weight: bold;
-}
-
-.topmenu ul li.menu-item-has-children > a {
-    padding-right: 10px;
-}
-
-.topmenu ul li.menu-item-has-children > a .sf-sub-indicator {
-    margin-left: 5px;
-}
-
-/* コンテンツセクションのスタイル */
 .jumbotron {
-    margin-bottom: 2rem;
-    padding: 2rem 1rem;
-    background-color: #f8f9fa;
-    border-radius: .3rem;
-}
-
-.fwidgets {
-    margin-bottom: 2rem;
-}
-
-.homewidget {
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 50px;
     text-align: center;
-    margin-bottom: 2rem;
 }
 
-.homewidget i {
-    font-size: 48px;
-    margin-bottom: 1rem;
+.jumbotron .display-4 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-.portbox, .postbox {
-    margin-bottom: 2rem;
+.jumbotron .lead {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-.portbox .hthumb, .postbox .hthumb {
-    margin-bottom: 1rem;
+.jumbotron .btn-primary {
+    background-color: #d9534f;
+    border-color: #d9534f;
+    font-size: 1.25rem;
+    padding: 10px 30px;
 }
 
-.portbox h3, .postbox h3 {
-    font-size: 18px;
-    margin-bottom: .5rem;
+.jumbotron .btn-primary:hover {
+    background-color: #c9302c;
+    border-color: #c12e2a;
 }
 
-.hometa {
-    font-size: 14px;
-    color: #777;
-    margin-bottom: 1rem;
-}
-
-.hometa a {
-    color: #007bff;
-}
-
-/* 画像が親要素の幅に収まるようにする */
-.img-responsive {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* .container 内の要素に余計な横スクロールを防ぐ */
-.container {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* ポートフォリオの画像を調整 */
-.portbox .hthumb img {
+.hthumb img {
     width: 100%;
     height: auto;
+}
+
+.fwidgets .homewidget {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fwidgets .homewidget h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.portbox,
+.postbox {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.portbox h3,
+.postbox h3 {
+    margin-top: 15px;
+    font-size: 1.25rem;
+}
+
+.postbox .hometa {
+    margin: 10px 0;
+    font-size: 0.875rem;
+    color: #999;
+}
+
+.site-footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.site-footer .fcred {
+    margin: 0;
+    color: #999;
 }
